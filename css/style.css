@@ -1,0 +1,298 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/organic-1280537_960_720.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+main > h2 {
+	margin: 0;
+	padding: 0 3vw;
+	color: #fff;
+	font-size: 9vh;
+	text-align: center;
+	letter-spacing: 0.3vw;
+}
+
+.container {
+	min-height: 90vh;
+	width: 30%;
+	margin: 5vh 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 3vh;
+}
+
+.container__logo {
+	position: relative;
+	min-height: 45vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container__logo--picture, .container__logo--name, .container__logo--designer {
+	display: flex;
+	justify-content: center;
+}
+
+.container__logo--picture img {
+	height: 20vh;
+	width: 10vw;
+	border-radius: 50%;
+}
+
+.container__logo--name h2 {
+	margin: 4vh 0;
+	color: #DE2ACF;
+	font-size: 4vh;
+	letter-spacing: 0.2vw;
+	text-transform: uppercase;
+}
+
+.container__logo--designer p {
+	margin: 0 0 1vh 0;
+	padding-bottom: 3vh;
+	color: #e06a4a;
+	font-size: 3.5vh;
+}
+
+.container__logo::before {
+	position: absolute;
+	top: 98%;
+	content: '';
+	height: 0.2vh;
+	width: 30vw;
+	background-color: #898282;
+}
+
+.container__info {
+	min-height: 45vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #6b6565;
+}
+
+.container__info--title h2 {
+	margin: 2vh 0;
+	font-size: 4.6vh;
+	letter-spacing: 0.1vw;
+}
+
+.container__info--about p {
+	padding: 0 2vw;
+	font-size: 3vh;
+	text-align: center;
+	word-spacing: 0.3vw;
+}
+
+.container__info--buttons {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.container__info--buttons button {
+	min-height: 8vh;
+	min-width: 4vw;
+	padding: 2vh 1vw;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+
+.container__info--buttons button:focus {
+	outline: none;
+}
+
+.container__info--buttons .icon {
+	font-size: 3vh;
+}
+
+.container__info--buttons .fb {
+	background-color: #0f16e0;
+}
+
+.container__info--buttons .fb:hover {
+	background-color: #fff;
+	color: #0f16e0;
+	border: 0.5vh solid #0f16e0;
+}
+
+.container__info--buttons .twitter {
+	background-color: #37bace;
+}
+
+.container__info--buttons .twitter:hover {
+	background-color: #fff;
+	color: #37bace;
+	border: 0.5vh solid #37bace;
+}
+.container__info--buttons .linkedin {
+	background-color: #2278bf;
+}
+
+.container__info--buttons .linkedin:hover {
+	background-color: #fff;
+	color: #2278bf;
+	border: 0.5vh solid #2278bf;
+}
+
+.container__info--buttons .google {
+	background-color: #bf2239;
+}
+
+.container__info--buttons .google:hover {
+	background-color: #fff;
+	color: #bf2239;
+	border: 0.5vh solid #bf2239;
+}
+
+footer {
+	margin-bottom: 2vh;
+	color: #fff;
+	font-size: 3vh;
+	text-align: center;
+}
+
+@media (max-width: 1000px) {
+
+	.container {
+		width: 35%;
+	}
+
+	.container__logo--picture img {
+		width: 11vw;
+	}
+}
+
+@media (max-width: 905px) {
+
+	.container {
+		width: 40%;
+	}
+
+	.container__logo--picture img {
+		width: 12vw;
+	}
+
+	.container__info--buttons {
+		width: 80%;
+	}
+}
+
+@media (max-width: 805px) {
+
+	.container {
+		width: 45%;
+	}
+
+	.container__logo--picture img {
+		width: 13vw;
+	}
+}
+
+@media (max-width: 700px) {
+
+	.container {
+		width: 50%;
+	}
+
+	.container__logo--picture img {
+		width: 14vw;
+	}
+
+	.container__info--buttons button {
+		min-width: 5.5vw;
+	}
+}
+
+@media (max-width: 637px) {
+
+	.container {
+		width: 55%;
+	}
+
+	.container__logo--picture img {
+		width: 16vw;
+	}
+
+	.container__info--buttons button {
+		min-width: 6.5vw;
+	}
+}
+
+@media (max-width: 520px) {
+
+	.container {
+		width: 60%;
+	}
+
+	.container__logo--picture img {
+		width: 19vw;
+	}
+
+	.container__info--buttons button {
+		min-width: 7vw;
+	}
+}
+
+@media (max-width: 473px) {
+
+	.container {
+		width: 70%;
+	}
+
+	.container__logo--picture img {
+		width: 20vw;
+	}
+
+	.container__info--buttons button {
+		min-width: 8vw;
+	}
+}
+
+@media (max-width: 396px) {
+
+	.container {
+		width: 85%;
+	}
+
+	.container__logo--picture img {
+		width: 26vw;
+	}
+
+	.container__info--buttons {
+		width: 90%;
+	}
+
+	.container__info--buttons button {
+		min-width: 10vw;
+	}
+}
